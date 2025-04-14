@@ -24,7 +24,7 @@ const CandidateLogin = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://20.193.128.47/api/auth/login",
+        "https://re-be.onrender.com/api/auth/login",
         formData
       );
       localStorage.setItem("token", response.data.token);
@@ -90,7 +90,7 @@ const CandidateLogin = () => {
               className={styles.googleButton}
               onClick={() =>
                 (window.location.href =
-                  "http://20.193.128.47/api/auth/google/candidate")
+                  "https://re-be.onrender.com/api/auth/google/candidate")
               }
             >
               <img src={google} alt="Google" width="24" height="24" />

@@ -22,7 +22,7 @@ const Scroller = ({ jobDetails, keywords, onRegenerate }) => {
         }
       };
 
-      const response = await fetch('http://20.193.128.47:8010/match-resume', {
+      const response = await fetch('https://re-be.onrender.com:8010/match-resume', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

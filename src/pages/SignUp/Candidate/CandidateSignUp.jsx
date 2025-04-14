@@ -28,7 +28,7 @@ const CandidateSignUp = ({ onNext, initialData }) => {
 
     try {
       const response = await axios.post(
-        'http://20.193.128.47/api/auth/signup/step1',
+        'https://re-be.onrender.com/api/auth/signup/step1',
         formData,
         {
           headers: {

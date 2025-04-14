@@ -26,7 +26,7 @@ const SignupStep1 = ({ onNext }) => {
         return;
       }
 
-      const response = await axios.post('http://20.193.128.47/api/recruiter/signup/step1', {
+      const response = await axios.post('https://re-be.onrender.com/api/recruiter/signup/step1', {
         fullName: formData.fullName,
         companyName: formData.companyName
       }, {
