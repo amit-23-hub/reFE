@@ -1,0 +1,302 @@
+.profileContainer {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sideMenuContainer {
+  display: flex;
+  flex-direction: column;
+  /* width: 180px; */
+  z-index: 10001;
+  /* border-right: 1px solid #ccc; */
+}
+
+.profileContent {
+  flex: 1;
+  padding: 1.25rem; /* 20px to rem */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profileGrid {
+  display: flex;
+  gap: 1.25rem; /* 20px to rem */
+  width: 90% ; 
+}
+
+.progressBarContainer {
+  width: 18.75rem; /* 300px to rem */
+}
+
+.profileDetailsContainer {
+  flex: 1;
+  margin-left: 5rem; /* 80px to rem */
+  max-width: 50rem; /* Added max-width for better responsiveness */
+}
+
+.profileHeader {
+  text-align: start;
+}
+
+.profileHeader h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.profileHeader p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.profileImageContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detailSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detailSection label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.detailSection input {
+  width: 80%; /* Changed from 50% to 100% */
+  padding: 0.625rem; /* 10px to rem */
+  border: 1px solid #ccc;
+  border-radius: 0.25rem; /* 4px to rem */
+  font-size: 0.875rem; /* 14px to rem */
+}
+
+.detailSection select {
+  width: 90%; /* Changed from 110% to 100% */
+  padding: 0.625rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+.detailSection   textarea {
+  width: 80%;
+  padding: 0.625rem; /* 10px to rem */
+  border: 1px solid #ccc;
+  border-radius: 0.25rem; /* 4px to rem */
+  font-size: 0.875rem; /* 14px to rem */
+}
+.phoneInput {
+  width: 83%;
+  display: flex;
+  align-items: center;
+}
+
+.phoneInput span {
+  padding: 0.625rem; /* Changed from 10px to match other inputs */
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem 0 0 0.25rem;
+  font-size: 0.875rem; /* Added to match input font size */
+  margin-right: 1rem;
+}
+
+.phoneInput input {
+  flex: 1;
+  border-radius: 0 0.25rem 0.25rem 0;
+  padding: 0.625rem; /* Added to match other inputs */
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: center; /* Changed from flex-end to center */
+  gap: 0.625rem; /* 10px to rem */
+  margin-top: 1.25rem; /* 20px to rem */
+  width: 100%;
+}
+
+.cancelButton {
+  padding: 0.625rem 1.25rem;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  min-width: 6.25rem; /* Added min-width */
+}
+
+.saveButton {
+  padding: 0.625rem 1.25rem;
+  background-color: #8a01da;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  min-width: 6.25rem; /* Added min-width */
+}
+
+.row {
+  display: flex;
+  gap: 1.875rem; /* 30px to rem */
+  width: 83.5%;
+}
+
+.row .detailSection {
+  flex: 1;
+  width: 94%;
+}
+
+/* Add this new rule to target inputs and selects within row's detailSection */
+/* .row .detailSection input, */
+.row .detailSection select {
+  width: 100%; /* Match the width of the pin input */
+}
+
+.detailSection .pin {
+  width: 92%;
+  padding: none;
+}
+
+/* Add media queries for better responsiveness */
+@media screen and (max-width: 1024px) {
+  .profileGrid {
+    flex-direction: column;
+  }
+
+  .profileDetailsContainer {
+    margin-left: 0;
+  }
+
+  .progressBarContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profileContainer {
+    height: auto;
+    min-height: initial;
+    background: transparent;
+    padding: 1rem;
+  }
+
+  .profileContent {
+    height: auto;
+    background: transparent;
+    padding: 20px 20px 100px;
+  }
+  .detailSection   textarea {
+    width: 100% ;
+    padding: 0.625rem; /* 10px to rem */
+    border: 1px solid #ccc;
+    border-radius: 0.25rem; /* 4px to rem */
+    font-size: 0.875rem; /* 14px to rem */
+  }
+
+  .detailSection input,
+  .detailSection select,
+  .phoneInput {
+    background-color: white;
+  }
+  .detailSection input {
+    width: 100%; /* Changed from 50% to 100% */
+    /* padding: 1rem; */
+    border: 1px solid #ccc;
+    border-radius: 0.5rem; /* 4px to rem */
+    font-size: 0.875rem; /* 14px to rem */
+  }
+  
+  .detailSection select {
+    width: 100%; /* Changed from 110% to 100% */
+    /* padding: 1rem; */
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .phoneInput span {
+    padding: 1rem; /* Changed to match mobile input padding */
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .phoneInput input {
+    padding: 1rem; /* Changed to match mobile input padding */
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  .detailSection select,
+  .detailSection input {
+    width: 100%;
+    background-color: white;
+  }
+  .phoneInput {
+    width: 108%;
+    background-color: white;
+  }
+  .row  .detailSection{
+    width: 108%;
+  }
+  .actionButtons {
+   
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+    padding: 1rem;
+   
+  }
+  .sideMenuContainer {
+    display: none;
+  }
+
+  .profileContent {
+    height: auto;
+    background: transparent;
+    padding: 20px 20px 100px;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* 20px to rem */
+    width: 100%;
+
+  }
+
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.editButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.editButton:hover {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+}
+

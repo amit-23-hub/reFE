@@ -1,0 +1,143 @@
+/* SocialLinks.module.css */
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.profileGrid {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  position: relative;
+}
+
+.progressBarContainer {
+  width: 300px;
+  padding-right: 20px;
+  /* border-right: 1px solid #e2ecf9; */
+}
+
+.mainContent {
+  flex: 1;
+  padding: 40px;
+  /* background-color: #fff; */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.form {
+  max-width: 500px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #ccc;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.cancelButton,
+.verifyButton {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background-color: #f5e6ff;
+  color: #6b48ff;
+}
+
+.verifyButton {
+  background-color: #6b48ff;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: transparent;
+    min-height: auto;
+    height: fit-content;
+  }
+
+  .mainContent {
+    background-color: transparent;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .form {
+    margin-bottom: 80px; /* Space for fixed buttons */
+  }
+  /* Hide sidemenu and progress bar */
+  .progressBarContainer {
+    display: none;
+  }
+
+  /* Adjust layout for mobile */
+  .profileGrid {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Fix form width on mobile */
+  .form {
+    max-width: 100%;
+  }
+
+  /* Adjust button group for mobile */
+  .buttonGroup {
+   
+    bottom: 0;
+    left: 0;
+    right: 0;
+ 
+    padding: 1rem;
+    
+    margin: 0;
+    justify-content: center;
+  }
+
+  .cancelButton,
+  .verifyButton {
+    min-width: 120px;
+  }
+}

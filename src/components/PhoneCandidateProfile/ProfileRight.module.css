@@ -1,0 +1,152 @@
+.rightSection {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.headerRow h3 {
+  font-size: clamp(1rem, 4vw, 1.2rem);
+  color: #333;
+  margin: 0;
+}
+
+.todayButton {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: clamp(0.8rem, 3vw, 0.9rem);
+}
+
+.matchStatsRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.statBox {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 0; /* Allows flex items to shrink properly */
+}
+
+.statBox:first-child {
+  background: #FFF5E9;
+}
+
+.statBox:last-child {
+  background: #F0FFE9;
+}
+
+.statBox span {
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.statBox p {
+  margin: 0;
+  font-size: clamp(0.75rem, 3vw, 0.85rem);
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resumeSection {
+  display: flex;
+  background: #7B3FE4 url('../../assets/powerResume.png') no-repeat center;
+  /* background-size: cover; */
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.resumeSection p {
+  color: white;
+  /* margin: 0 0 1rem 0; */
+  font-size: clamp(0.8rem, 3.5vw, 0.9rem);
+}
+
+.powerResumeBtn {
+  background: white;
+  color: #7B3FE4;
+  border: none;
+  /* padding: 0.6rem 1rem; */
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 50%;
+  /* margin-top: 1rem; */
+  font-size: clamp(0.8rem, 3.5vw, 0.9rem);
+}
+
+.pendingActions {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pendingActions h4 {
+  margin: 0;
+  color: #333;
+  font-size: clamp(0.9rem, 4vw, 1.1rem);
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rightSection {
+    padding: 1rem;
+  }
+  
+  .matchStatsRow {
+    gap: 0.75rem;
+  }
+
+  .statBox {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rightSection {
+    padding: 0.8rem;
+  }
+
+  .headerRow {
+    margin-bottom: 1rem;
+  }
+
+  .matchStatsRow, .resumeSection {
+    margin-bottom: 1rem;
+  }
+
+  .pendingActions {
+    padding: 1rem;
+  }
+}

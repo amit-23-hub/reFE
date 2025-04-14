@@ -1,0 +1,33 @@
+
+  
+.logo {
+  display: flex;
+  align-items: center;   
+  gap: 0.5rem;
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.logoImg {
+  width: 1.625rem;
+  height: 1.625rem;
+  object-fit: contain;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  align-items: center;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-bottom: 1rem;
+  }
+  
+  .logoImg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+  

@@ -1,0 +1,167 @@
+.formContainer {
+  background: #fff8ff;
+  padding: 24px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 2px solid transparent;  /* Changed to transparent */
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #7404B6, #AE56E1, #DECAEB) border-box;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(116, 4, 182, 0.1);
+  font-family: var(--font-poppins);
+  width: 100%;
+  max-width: 800px;
+  transition: all 0.3s ease-in-out;
+}
+
+.adjustedWidth {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #7404B6, #AE56E1, #DECAEB) border-box;
+  padding: 20px;
+  border-radius: 16px;
+  height: fit-content;
+  margin: 0 auto;
+  width: 98%;
+  max-width: 800px;
+}
+
+/* Update media queries */
+@media (max-width: 992px) {
+  .formContainer,
+  .adjustedWidth {
+    max-width: 100%;  /* Full width below 993px */
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #8a01da;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.inputField {
+  width: 100%;
+  max-width: 624px;
+  height: 22px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 12px;
+  background: #FFFFFF;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .formContainer {
+    padding: 20px;
+  }
+  
+  .adjustedWidth {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .formContainer {
+    padding: 16px;
+  }
+  
+  .adjustedWidth {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 16px;
+    width: 100%;
+  }
+  
+  .adjustedWidth {
+    padding: 12px;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  
+  .inputField {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .formContainer {
+    padding: 12px;
+  }
+  
+  .adjustedWidth {
+    padding: 10px;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+  }
+}
+
+.generateButton {
+  background: #8a01da;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.uploadButton {
+  background: #efe5ff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+@media (max-width: 1024px) {
+  .formContainer {
+    width: 80%;
+  }
+
+  .adjustedWidth {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    width: 90%; 
+  }
+
+  .adjustedWidth {
+    width: 85% !important;
+  }
+
+  .inputField {
+    width: 90%;
+  }
+}

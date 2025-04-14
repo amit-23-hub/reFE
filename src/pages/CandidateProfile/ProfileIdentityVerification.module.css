@@ -1,0 +1,432 @@
+.profileContainer {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(291.21deg, #faf7ff 8.45%, #f3ecff 90.27%);
+}
+
+.sideMenuContainer {
+  display: flex;
+  flex-direction: column;
+  width: 74px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 10001;
+  height: 100vh;
+}
+
+.sideMenuContainer:hover {
+  width: 250px;
+}
+
+.sideMenuContainer:hover .menuItem {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease 0.1s, visibility 0s ease 0.1s;
+}
+
+.profileContent {
+  flex: 1;
+  padding: 20px;
+  background-color: #fdfcff;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.profileGrid {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.progressBarContainer {
+  width: 300px;
+  padding-right: 20px;
+}
+
+.profileDetailsContainer {
+  flex: 1;
+  padding: 1.25rem;
+}
+
+.profileHeader {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.profileHeader h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #313131;
+  margin-bottom: 10px;
+}
+
+.profileHeader p {
+  font-size: 16px;
+  color: #a0aec0;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.verified {
+  background-color: #e6f7ee;
+  color: #28a745;
+}
+
+.rejected {
+  background-color: #fdecea;
+  color: #dc3545;
+}
+
+.errorMessage {
+  color: #dc3545;
+  background-color: #fdecea;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.verificationForm {
+  width: 27rem ;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.proofSelect {
+  width: 108% ;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.proofSelect:focus {
+  outline: none;
+  border-color: #8a01da;
+  box-shadow: 0 0 5px rgba(138, 1, 218, 0.3);
+}
+
+.fileUploadContainer {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #6c757d;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.uploadButton:hover {
+  background-color: #e9ecef;
+  border-color: #8a01da;
+  color: #8a01da;
+}
+
+.fileHint {
+  font-size: 12px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.documentPreview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 8px;
+}
+
+.documentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.documentType {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.documentName {
+  font-size: 13px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+.documentSize {
+  font-size: 12px;
+  color: #999;
+}
+
+.documentActions {
+  display: flex;
+  gap: 12px;
+}
+
+.viewLink {
+  color: #8a01da;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.viewLink:hover {
+  text-decoration: underline;
+}
+
+.removeButton {
+  color: #dc3545;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.removeButton:hover {
+  text-decoration: underline;
+}
+
+.addressInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 100px;
+  max-width: 300px;
+}
+
+.consentSection {
+  margin-top: 20px;
+}
+
+.consentLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.consentLabel input {
+  margin-top: 3px;
+}
+
+.uploadProgress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  max-width: 284px ;
+}
+
+.progressBar {
+  flex: 1;
+  height: 6px;
+  background-color: #e9ecef;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: #8a01da;
+  transition: width 0.3s ease;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 27rem ;
+}
+
+.cancelButton, .verifyButton {
+  padding:11px 30px  ;
+  min-width: 13rem ;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancelButton {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.verifyButton {
+  background-color: #8a01da;
+  color: white;
+  border: none;
+}
+
+.verifyButton:hover {
+  background-color: #7a00c2;
+}
+
+.cancelButton:hover {
+  background-color: #e5e5e5;
+}
+
+.completedMessage {
+  text-align: center;
+  margin-top: 30px;
+  max-width: 300px;
+}
+
+.completedMessage p {
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.continueButton {
+  padding: 12px 40px;
+  background-color: #8a01da;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.continueButton:hover {
+  background-color: #7a00c2;
+}
+
+@media screen and (max-width: 768px) {
+  .profileContainer {
+    padding: 0;
+    background: transparent;
+    min-height: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sideMenuContainer {
+    display: none;
+  }
+
+  .profileContent {
+    padding: 0;
+    background: transparent;
+    min-height: auto;
+    height: fit-content;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .profileGrid {
+    flex-direction: column;
+    min-height: auto;
+    align-items: center;
+  }
+
+  .profileDetailsContainer {
+    padding: 20px;
+    margin-bottom: 80px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .formGroup,
+  .fileUploadContainer,
+  .documentPreview,
+  .actionButtons,
+  .completedMessage {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .proofSelect,
+  .addressInput {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .actionButtons {
+    position: static;
+    padding: 0;
+    margin: 40px 0 20px;
+    transform: none;
+    gap: 10px;
+  }
+
+  .cancelButton, 
+  .verifyButton {
+    flex: 1;
+    min-width: auto;
+    padding: 12px 20px;
+  }
+
+  .profileHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}

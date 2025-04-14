@@ -1,0 +1,158 @@
+.dashboard {
+  display: flex;
+  background: linear-gradient(291.21deg, #faf7ff 8.45%, #ffffff 90.27%);
+  min-height: 100vh;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.formAndList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.scrollerContainer {
+  width: 25rem;
+  margin-left: 1.25rem;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .scrollerContainer {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .middle {
+    flex-direction: column;
+  }
+  
+  .scrollerContainer {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1.25rem;
+  }
+}
+
+.mobileTop {
+  display: none;
+}
+
+.desktopTop {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .mobileTop {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .desktopTop {
+    display: none;
+  }
+
+  .mainContent {
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .formAndList {
+    gap: 1rem;
+  }
+  
+  .middle {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContent {
+    padding: 40px 8px 8px 8px;
+  }
+}
+
+
+.jobInfo {
+  margin: 15px auto;  /* Changed from '15px 0' to '15px auto' */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Added this */
+  max-width: 600px;    /* Added this */
+}
+
+.salaryInfo, .workSystemInfo {
+  margin: 8px 0;
+  padding: 8px 16px;
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;  /* Added this */
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+  .jobInfo {
+    max-width: 100%;
+    padding: 8px;
+  }
+}
+.jobInfo{
+border-radius: 20px;
+  width: fit-content;
+}
+
+.salaryInfo {
+  border: 1px solid #FFA500;
+  color: #FF8C00;
+  border-radius: 8px;
+}
+
+.workSystemInfo {
+  border: 1px solid #4CAF50;
+  color: #2E7D32;
+  border-radius: 8px;
+}
+
+.salaryInfo span, .workSystemInfo span {
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .jobInfo {
+    max-width: 100%;
+    padding: 8px;
+  }
+
+  .salaryInfo, .workSystemInfo {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .salaryInfo, .workSystemInfo {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}
