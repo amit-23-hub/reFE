@@ -53,7 +53,7 @@ const SignupStep2 = ({ onNext, formData, onBack }) => {
         localFormData.agreeToTerms
       ) {
         if (localFormData.password === localFormData.confirmPassword) {
-          const response = await axios.post('http://localhost:5001/api/recruiter/signup/step2', {
+          const response = await axios.post('http://20.193.128.47/api/recruiter/signup/step2', {
             recruiterId: formData.userId,
             companyEmail: localFormData.companyEmail,
             password: localFormData.password

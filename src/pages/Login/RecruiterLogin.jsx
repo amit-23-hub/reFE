@@ -25,7 +25,7 @@ const RecruiterLogin = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5001/api/recruiter/login",
+        "http://20.193.128.47/api/recruiter/login",
         {
           email: formData.email,
           password: formData.password,
@@ -105,7 +105,7 @@ const RecruiterLogin = () => {
               className={styles.googleButton}
               onClick={() =>
                 (window.location.href =
-                  "http://localhost:5001/api/auth/google/recruiter")
+                  "http://20.193.128.47/api/auth/google/recruiter")
               }
             >
               <img src={google} alt="Google" width="24" height="24" />

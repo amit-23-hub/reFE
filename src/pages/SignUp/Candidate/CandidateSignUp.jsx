@@ -28,7 +28,7 @@ const CandidateSignUp = ({ onNext, initialData }) => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5001/api/auth/signup/step1',
+        'http://20.193.128.47/api/auth/signup/step1',
         formData,
         {
           headers: {
